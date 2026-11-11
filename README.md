@@ -4,7 +4,7 @@ Paste a chunk of text, get the word and character count. Works with Spanish, Eng
 
 ![Screenshot](docs/screenshot.png)
 
-## Run it
+## Running
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
@@ -14,7 +14,7 @@ python3 app.py
 
 Open http://localhost:8000. Set `PORT` to use a different port.
 
-## How it counts
+## Counting criteria
 
 | Stat | Rule |
 | --- | --- |
