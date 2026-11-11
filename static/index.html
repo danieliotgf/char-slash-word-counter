@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word Counter</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232f6fed'/><text x='16' y='22' font-family='system-ui,sans-serif' font-size='15' font-weight='700' fill='white' text-anchor='middle'>Aa</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Word Counter</h1>
+      <p class="tagline">Paste some text. Get the numbers.</p>
+    </header>
+
+    <section class="stats" aria-live="polite">
+      <div class="stat stat-primary">
+        <span class="stat-value" id="words">0</span>
+        <span class="stat-label">Words</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="characters">0</span>
+        <span class="stat-label">Characters</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="characters_no_spaces">0</span>
+        <span class="stat-label">Without spaces</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="paragraphs">0</span>
+        <span class="stat-label">Paragraphs</span>
+      </div>
+    </section>
+
+    <section class="editor">
+      <textarea id="input" placeholder="Paste or type your text here…" spellcheck="false" autofocus></textarea>
+      <div class="editor-bar">
+        <span class="status" id="status"></span>
+        <button type="button" id="clear">Clear</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
